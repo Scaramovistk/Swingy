@@ -16,8 +16,8 @@ tar zxvf apache-maven-3.9.6-bin.tar.gz
 rm jdk-22_linux-x64_bin.tar.gz
 rm apache-maven-3.9.6-bin.tar.gz
 
-if ! grep -q "$JDK_FOLDER/Contents/Home/bin" ~/.zshrc; then
-    echo "export PATH=\"$INSTALL_DIR/$JDK_FOLDER/Contents/Home/bin:\$PATH\"" >> ~/.zshrc
+if ! grep -q "$JDK_FOLDER/bin" ~/.zshrc; then
+    echo "export PATH=\"$INSTALL_DIR/$JDK_FOLDER/bin:\$PATH\"" >> ~/.zshrc
 fi
 
 if ! grep -q "$MAVEN_FOLDER/bin" ~/.zshrc; then
@@ -25,7 +25,10 @@ if ! grep -q "$MAVEN_FOLDER/bin" ~/.zshrc; then
 fi
 
 if [ -z "$JAVA_HOME" ] || [[ "$JAVA_HOME" != *"/$JDK_FOLDER"* ]]; then
-    echo "export JAVA_HOME=\"$INSTALL_DIR/$JDK_FOLDER/Contents/Home/bin\"" >> ~/.zshrc
+    echo "export JAVA_HOME=\"$INSTALL_DIR/$JDK_FOLDER\"" >> ~/.zshrc
 fi
 
 source ~/.zshrc
+
+# export JAVA_HOME=/Users/gscarama/goinfre/jdk-13.jdk/Contents/Home
+# export PATH=/Users/gscarama/goinfre/jdk-13.jdk/Contents/Home/bin
