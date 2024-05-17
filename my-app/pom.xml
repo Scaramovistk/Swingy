@@ -25,6 +25,7 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+  <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-swing -->
 	<dependency>
 		<groupId>org.openjfx</groupId>
 		<artifactId>javafx-swing</artifactId>
@@ -32,7 +33,6 @@
 	</dependency>
   </dependencies>
 
-  <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-swing -->
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

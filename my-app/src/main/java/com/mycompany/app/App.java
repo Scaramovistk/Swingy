@@ -1,6 +1,8 @@
 package com.mycompany.app;
 
-import javax.swing.*;        
+import javax.swing.*;
+
+import javafx.scene.paint.Color;        
 
 public class App {
 	/**
@@ -10,16 +12,28 @@ public class App {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("HelloWorldSwing");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame frame = new JFrame("The Best Game You Can Play");
+		frame.setSize(600, 600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Close the app when close button
+		frame.setResizable(false);
+
 
         //Add the ubiquitous "Hello World" label.
         JLabel label = new JLabel("Hello World");
         frame.getContentPane().add(label);
+        frame.getContentPane().add(label);
+        frame.getContentPane().add(label);
+        frame.getContentPane().add(label);
+
+		ImageIcon image = new ImageIcon("~/Desktop/cypher Simbol.png");
+
+        frame.setVisible(true);
+		frame.setIconImage(image.getImage());
+		// frame.getContentPane().setBackground(new Color(250, 0, 0));
+
 
         //Display the window.
-        frame.pack();
-        frame.setVisible(true);
+        // frame.pack();
     }
 
     public static void main(String[] args) {
