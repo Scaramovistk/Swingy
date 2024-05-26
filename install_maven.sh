@@ -32,3 +32,4 @@ source ~/.zshrc
 
 # export JAVA_HOME=/Users/gscarama/goinfre/jdk-13.jdk/Contents/Home
 # export PATH=/Users/gscarama/goinfre/jdk-13.jdk/Contents/Home/bin
+#java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
