@@ -1,3 +1,5 @@
+package com.mycompany.app.Artifact;
+
 public class Artifact
 {
 	int Attack;

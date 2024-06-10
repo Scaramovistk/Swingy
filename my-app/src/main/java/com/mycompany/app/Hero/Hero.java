@@ -1,3 +1,5 @@
+package com.mycompany.app.Hero;
+
 public class Hero
 {
 	String	name;
