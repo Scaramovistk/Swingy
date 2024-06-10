@@ -34,10 +34,7 @@ public class Hero
 		
 	}
 
-	public void Fight()
-	{
-		//which engages him in a battle with the villain
-	}
+
 
 	public void Run()
 	{
