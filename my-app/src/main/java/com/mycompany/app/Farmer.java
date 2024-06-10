@@ -1,6 +1,6 @@
 
 
-public class Farmer extended Hero
+public class Farmer extends Hero
 {
 	public Farmer()
 	{

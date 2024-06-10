@@ -1,11 +1,11 @@
-ublic class Hero
+public class Hero
 {
 	String	name;
-	String	class;
+	String	type;
 	float	level;
 	int		experience;
 	int		attack;
-	int		defense
+	int		defense;
 	int		hitPoints;
 
 	//Attack and defence should be a class ?

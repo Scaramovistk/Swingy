@@ -1,6 +1,6 @@
 
 
-public class Cleric extended Hero
+public class Cleric extends Hero
 {
 	public Cleric()
 	{

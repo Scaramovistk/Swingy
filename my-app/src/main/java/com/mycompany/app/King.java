@@ -1,6 +1,6 @@
 
 
-public class King extended Hero
+public class King extends Hero
 {
 	public King()
 	{
