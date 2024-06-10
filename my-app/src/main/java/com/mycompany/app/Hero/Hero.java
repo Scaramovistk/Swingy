@@ -11,9 +11,12 @@ public class Hero
 	int		hitPoints;
 
 	//Attack and defence should be a class ?
-	public Hero()
+	public Hero(String uName)
 	{
-		//Will initialize the argumetns or leave it for the extended class
+		name = uName;
+		level = 0;
+		experience = 0;
+		//Will initialize the argumetns or leave it for the extended class?
 	}
 
 	public void Attack()
@@ -30,4 +33,15 @@ public class Hero
 	{
 		
 	}
+
+	public void Fight()
+	{
+		//which engages him in a battle with the villain
+	}
+
+	public void Run()
+	{
+		//which gives him a 50If the odds aren’t on his side, he must fight the villain.
+	}
+
 }
