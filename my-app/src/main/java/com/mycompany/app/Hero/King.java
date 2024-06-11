@@ -11,4 +11,19 @@ public class King extends Hero
 		defense = 5;
 		hitPoints = 4;
 	}
+
+	public void Attack()
+	{
+
+	}
+
+	public void Defense()
+	{
+
+	}
+
+	public void updateStatus()
+	{
+		
+	}
 }
