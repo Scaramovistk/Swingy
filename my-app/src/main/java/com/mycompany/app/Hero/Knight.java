@@ -1,15 +1,15 @@
 package Hero;
 
-public class Farmer extends Hero
+public class Knight extends Hero
 {
-	public Farmer(String p_name)
+	public Knight(String p_name)
 	{
 		super();
-		//Initialize stats
+		//Define Hero stats
 		name = p_name;
-		type = "Farmer";
-		attack = 3;
-		defense = 5;
+		type = "Knight";
+		attack = 5;
+		defense = 3;
 		hitPoints = 50;
 	}
 
