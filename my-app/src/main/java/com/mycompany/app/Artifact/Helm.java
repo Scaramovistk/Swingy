@@ -2,11 +2,17 @@ package com.mycompany.app.Artifact;
 
 public class Helm extends Artifact
 {
-	public Helm()
+	public Helm(int p_level)
 	{
 		super();
-		attack = 0;
-		defence = 0;
+
+		//Apply a function to git a level according to the level gaven
 		hitPoints = 100;
+	}
+
+	@Override
+	public int getBuff() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'getBuff'");
 	}
 }

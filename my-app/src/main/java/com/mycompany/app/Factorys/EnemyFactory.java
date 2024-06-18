@@ -1,3 +1,6 @@
+package com.mycompany.app.Factorys;
+
+import com.mycompany.app.Enemy.*;
 
 public class EnemyFactory
 {

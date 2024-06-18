@@ -1,3 +1,6 @@
+package com.mycompany.app.Factorys;
+
+import com.mycompany.app.Artifact.*;
 
 public class ArtifactFactory
 {
@@ -19,11 +22,11 @@ public class ArtifactFactory
 		switch(p_type)
 		{
 			case "Armor":
-				return (new Armor(p_level));
+				return (new Armor(p_quality));
 			case "Helm":
-				return (new Helm(p_level));
+				return (new Helm(p_quality));
 			case "Weapon":
-				return (new Weapon(p_level));
+				return (new Weapon(p_quality));
 			default:
 				throw new IllegalArgumentException("Invalid argument: Type font exist");
 		}

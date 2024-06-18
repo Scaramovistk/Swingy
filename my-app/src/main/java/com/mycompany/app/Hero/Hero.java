@@ -1,5 +1,10 @@
-package Hero;
-import Artifact;
+package com.mycompany.app.Hero;
+import java.util.LinkedList;
+import java.util.List;
+
+import com.mycompany.app.Action.Action;
+import com.mycompany.app.Artifact.Artifact;
+import com.mycompany.app.Interface.Entity;
 
 public class Hero extends Entity
 {
@@ -20,20 +25,20 @@ public class Hero extends Entity
 	protected void equipArtifact(Artifact p_artifact)
 	{
 		if (p_artifact == null || artifacts.contains(p_artifact))
-			throw IllegalArgumentException("Illegal Argument: Given artifact is null or alredy equiped.");
+			throw new IllegalArgumentException("Illegal Argument: Given artifact is null or alredy equiped.");
 		artifacts.add(p_artifact);
 	}
 
 	public void updateXp(int xp_earned)
 	{
 		if (xp_earned < 0)
-			throw IllegalArgumentException("Illegal Argument: XP need to be higher than 0.");
+			throw new IllegalArgumentException("Illegal Argument: XP need to be higher than 0.");
 		if ((experience + xp_earned) >= xpToNextLevel)
 			updateLevel();
 		experience =+ xp_earned;
 	}
 
-	public void movePosition(char direction)
+	public void movePosition(String direction)
 	{
 		//Does a need accest to a map here  or just it as a Singleton will work?
 		switch (direction)
@@ -56,7 +61,7 @@ public class Hero extends Entity
 
 	public String getName() { return (name); }
 
-	public String getClass() { return (type); }
+	public String getType() { return (type); }
 
 	public float getLevel() { return (level); }
 
@@ -67,4 +72,22 @@ public class Hero extends Entity
 	public int getDefense() { return (defense); }
 
 	public int getHitPoints() { return (hitPoints); }
+
+	@Override
+	public void Attack() { //Do nothing
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'Attack'");
+	}
+
+	@Override
+	public void Defense() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'Defense'");
+	}
+
+	@Override
+	public void updateStatus(int p_damage) {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'updateStatus'");
+	}
 }

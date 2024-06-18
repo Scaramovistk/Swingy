@@ -1,11 +1,10 @@
-package Hero;
+package com.mycompany.app.Hero;
 
 public class Cleric extends Hero
 {
 	public Cleric(String p_name)
 	{
-		super();
-		name = p_name;
+		super(p_name);
 		type = "Cleric";
 		attack = 3;
 		defense = 3;

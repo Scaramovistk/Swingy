@@ -2,11 +2,15 @@ package com.mycompany.app.Artifact;
 
 public class Weapon extends Artifact
 {
-	public Weapon()
+	public Weapon(int p_level)
 	{
 		super();
 		attack = 100;
-		defence = 0;
-		hitPoints = 0;
+	}
+
+	@Override
+	public int getBuff() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'getBuff'");
 	}
 }

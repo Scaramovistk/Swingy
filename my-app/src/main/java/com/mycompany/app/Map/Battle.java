@@ -1,16 +1,25 @@
+package com.mycompany.app.Map;
+
+import com.mycompany.app.Enemy.Enemy;
+import com.mycompany.app.Hero.Hero;
 
 public class Battle
 {
 	private Hero hero;
 	private Enemy enemy;
 
-	public Battle(Hero p_hero, Enemy p_enemy)
+	public Battle(Hero p_hero, Enemy p_enemy) throws Exception
 	{
 		// Do a check if valid value
 		if (p_hero == null || p_enemy == null)
-			throw Exception();
+			throw new Exception();
 		hero = p_hero;
 		enemy = p_enemy;
+
+		//Create an enemy ??
+		//Give the possibility for the hero to fight or run
+		//If run, generate a possibily and run random number
+		//Fight = start the battle
 	}
 
 	public void startBattle()

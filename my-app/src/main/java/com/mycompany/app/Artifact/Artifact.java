@@ -1,13 +1,17 @@
 package com.mycompany.app.Artifact;
 
-public class Artifact
+public abstract class Artifact
 {
-	int attack;
-	int defence;
-	int hitPoints;
+	protected int attack;
+	protected int defense;
+	protected int hitPoints;
 
 	public Artifact()
 	{
-		
+		attack = 0;
+		defense = 0;
+		hitPoints = 0;
 	}
+
+	public abstract int getBuff(); //One function to return the buff to everyone
 }

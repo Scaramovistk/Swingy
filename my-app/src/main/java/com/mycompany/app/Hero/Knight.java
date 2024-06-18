@@ -1,12 +1,11 @@
-package Hero;
+package com.mycompany.app.Hero;
 
 public class Knight extends Hero
 {
 	public Knight(String p_name)
 	{
-		super();
+		super(p_name);
 		//Define Hero stats
-		name = p_name;
 		type = "Knight";
 		attack = 5;
 		defense = 3;

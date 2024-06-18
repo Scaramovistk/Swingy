@@ -1,3 +1,6 @@
+package com.mycompany.app.Map;
+
+import com.mycompany.app.Hero.Hero;
 
 public class Map
 {
@@ -13,7 +16,7 @@ public class Map
 	public static Map getInstance()
 	{
 		if (map == null)
-			map = new EnemyFactory();
+			map = new Map();
 		return (map);
 	}
 
@@ -48,9 +51,10 @@ public class Map
 	public void createHero()
 	{
 		//Pre made heros, create own hero or load it from the txt file
-		if (p_hero == null)
-			throw IllegalArgumentException("Illegal Argument: Hero in the map set to NULL.");
-		hero = p_hero;
+		//how to load it, how to save it, in which format i need to do it
+		// if (p_hero == null)
+		// 	throw new IllegalArgumentException("Illegal Argument: Hero in the map set to NULL.");
+		// hero = p_hero;
 	}
 
 	public void finishGame()

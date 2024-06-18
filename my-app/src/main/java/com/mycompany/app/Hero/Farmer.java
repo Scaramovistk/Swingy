@@ -1,12 +1,11 @@
-package Hero;
+package com.mycompany.app.Hero;
 
 public class Farmer extends Hero
 {
 	public Farmer(String p_name)
 	{
-		super();
+		super(p_name);
 		//Initialize stats
-		name = p_name;
 		type = "Farmer";
 		attack = 3;
 		defense = 5;
