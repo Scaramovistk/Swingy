@@ -17,6 +17,7 @@ public class Main {
 
 			program.exec();
 			System.out.print("CLI working first\n");
+			//One time CLI working i adapt it to GUI
 			
 		}
 		else if ("GUI".equals(args[0]))

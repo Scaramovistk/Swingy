@@ -28,13 +28,13 @@ public class ActionFactory
 		switch(p_type)
 		{
 			case "Run":
-				return (new Run());
+				return (new Run(hero, new Enemy()));
 			case "Fight":
 				return (new Fight(hero, new Enemy()));
 			case "Attack":
-				return (new Attack());
+				return (new Attack(hero, new Enemy()));
 			case "Defend":
-				return (new Defend());
+				return (new Defend(hero, new Enemy()));
 			default:
 				throw new IllegalArgumentException("Invalid argument: Type dont exist");
 		}
