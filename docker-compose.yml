@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  swingy:
+    container_name: swingy
+    image: swingy
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/swingy
+    networks:
+      - swingy_network
+    restart: always
+
+networks:
+  swingy_network:
+    name: swingy_network

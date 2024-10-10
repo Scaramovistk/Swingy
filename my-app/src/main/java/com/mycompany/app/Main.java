@@ -10,16 +10,15 @@ public class Main {
 		if (args.length != 1)
 			return ; //Exception error ?
 
-		if("CLI".equals(args[0]))
+		
+		if(args[0].equals("CLI"))
 		{
-			//Exec CLI
 			CLI program = new CLI();
 
 			program.exec();
 			System.out.print("CLI working first\n");
-			
 		}
-		else if ("GUI".equals(args[0]))
+		else if (args[0].equals("CLI"))
 		{
 			//Adapt to GUI after CLI is done
 		}
@@ -28,12 +27,5 @@ public class Main {
 			System.out.print("Wrong input\n");
 			return;
 		}
-
-		// javax.swing.SwingUtilities.invokeLater(new Runnable()
-		// {
-		// 	public void run() {
-		// 	MyFrame myFrame = new MyFrame();
-		// }
-		// });
 	}
 }
