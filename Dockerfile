@@ -8,8 +8,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y  \
 	curl \
 	make
 
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 WORKDIR /swingy
 
 CMD ["tail", "-f", "/dev/null"]
