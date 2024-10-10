@@ -9,4 +9,4 @@ practices suited for this problem.
 
 ### UML Diagran
 
-![alt text](./UML.png)
+![alt text](./UML.jpg)
