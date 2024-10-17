@@ -7,6 +7,9 @@ of problems, but also needs to implement new ideeas, like event-driven programmi
 Its needed to implement a minimalistic text-based RPG game and apply the best
 practices suited for this problem. 
 
+## Appling some Design Patterns
+Model-View-Controller
+
 ### UML Diagran
 
 ![alt text](./utils/UML.jpg)
